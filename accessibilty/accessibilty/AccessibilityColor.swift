@@ -33,7 +33,21 @@ extension UIColor {
     
     // This is the color used behind the enlarged profile view
     class func transparentGrayBackground() -> UIColor {
-        var color = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 0.75)
+        var alpha = alphaValue(0.75)
+        
+        var color = UIColor(red: 0.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: alpha)
         return color
+    }
+    
+    // This method will determine if reduced transparency is on. If it is on, this
+    // method will return an alpha value of 1 otherwise it will return the desired
+    // alpha value
+    class func alphaValue(desiredAlpha: CGFloat) -> CGFloat {
+        var alpha = desiredAlpha
+        if (UIAccessibilityIsReduceTransparencyEnabled()) {
+            alpha = 1.0
+        }
+        
+        return alpha
     }
 }
