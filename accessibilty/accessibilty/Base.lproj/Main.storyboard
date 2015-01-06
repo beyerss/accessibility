@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="accessibilty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steven Beyers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7w-HE-WLo">
+                                <rect key="frame" x="245" y="28" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileImage" translatesAutoresizingMaskIntoConstraints="NO" id="rWI-Wa-4Re">
+                                <rect key="frame" x="16" y="76" width="93" height="93"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="7ze-EU-Ugh"/>
+                                    <constraint firstAttribute="height" constant="93" id="caX-gX-lV0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Employer:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhu-o9-DTD">
+                                <rect key="frame" x="139" y="76" width="78" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CapTech Consulting" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTd-qK-ZFf">
+                                <rect key="frame" x="227" y="76" width="357" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO9-x7-8U5">
+                                <rect key="frame" x="139" y="111" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sr. Consultant" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iit-iE-UbQ">
+                                <rect key="frame" x="186" y="111" width="398" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Biography" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxp-oq-poA">
+                                <rect key="frame" x="16" y="196" width="79" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQQ-8i-Yjb">
+                                <rect key="frame" x="16" y="225" width="568" height="82"/>
+                                <string key="text">I am a software engineer focused on mobile development. My favorite platform to develop for is iOS. I am an avid sports fan. In my spare time I like to learn about new technoligies, spend time with family and play hockey.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d07-bk-qj1">
+                                <rect key="frame" x="16" y="76" width="93" height="93"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="VYE-IF-mKN" appends="YES" id="r0S-wh-Q7C"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rWI-Wa-4Re" firstAttribute="top" secondItem="d07-bk-qj1" secondAttribute="top" id="AaE-uc-tOR"/>
+                            <constraint firstItem="eTd-qK-ZFf" firstAttribute="leading" secondItem="Dhu-o9-DTD" secondAttribute="trailing" constant="10" id="EZi-T9-unD"/>
+                            <constraint firstItem="rWI-Wa-4Re" firstAttribute="bottom" secondItem="d07-bk-qj1" secondAttribute="bottom" id="G4d-1S-P2b"/>
+                            <constraint firstItem="rWI-Wa-4Re" firstAttribute="top" secondItem="U7w-HE-WLo" secondAttribute="bottom" constant="27" id="J7Q-y8-FL0"/>
+                            <constraint firstItem="xQQ-8i-Yjb" firstAttribute="trailing" secondItem="iit-iE-UbQ" secondAttribute="trailing" id="Mvj-wd-j9A"/>
+                            <constraint firstItem="Yxp-oq-poA" firstAttribute="top" secondItem="rWI-Wa-4Re" secondAttribute="bottom" constant="27" id="NXf-G6-TJJ"/>
+                            <constraint firstItem="iit-iE-UbQ" firstAttribute="top" secondItem="eTd-qK-ZFf" secondAttribute="bottom" constant="14" id="PjL-W5-pVH"/>
+                            <constraint firstItem="xQQ-8i-Yjb" firstAttribute="top" secondItem="Yxp-oq-poA" secondAttribute="bottom" constant="8" id="R9U-6s-hCM"/>
+                            <constraint firstAttribute="centerX" secondItem="U7w-HE-WLo" secondAttribute="centerX" id="SmD-f4-UQa"/>
+                            <constraint firstItem="U7w-HE-WLo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="U9c-Nn-BtR"/>
+                            <constraint firstItem="Dhu-o9-DTD" firstAttribute="leading" secondItem="rWI-Wa-4Re" secondAttribute="trailing" constant="30" id="WWy-Lz-pXb"/>
+                            <constraint firstItem="iit-iE-UbQ" firstAttribute="trailing" secondItem="eTd-qK-ZFf" secondAttribute="trailing" id="Xpg-XI-wuv"/>
+                            <constraint firstItem="Yxp-oq-poA" firstAttribute="leading" secondItem="rWI-Wa-4Re" secondAttribute="leading" id="Yjg-ke-vDT"/>
+                            <constraint firstItem="iit-iE-UbQ" firstAttribute="baseline" secondItem="bO9-x7-8U5" secondAttribute="baseline" id="c8f-q3-heL"/>
+                            <constraint firstItem="Dhu-o9-DTD" firstAttribute="top" secondItem="rWI-Wa-4Re" secondAttribute="top" id="cQP-za-hIE"/>
+                            <constraint firstItem="xQQ-8i-Yjb" firstAttribute="leading" secondItem="Yxp-oq-poA" secondAttribute="leading" id="dxF-ht-iPr"/>
+                            <constraint firstItem="Dhu-o9-DTD" firstAttribute="leading" secondItem="bO9-x7-8U5" secondAttribute="leading" id="eJc-pO-y7Z"/>
+                            <constraint firstItem="rWI-Wa-4Re" firstAttribute="leading" secondItem="d07-bk-qj1" secondAttribute="leading" id="oPW-MZ-MFm"/>
+                            <constraint firstItem="rWI-Wa-4Re" firstAttribute="trailing" secondItem="d07-bk-qj1" secondAttribute="trailing" id="pb7-gL-qrw"/>
+                            <constraint firstItem="iit-iE-UbQ" firstAttribute="leading" secondItem="bO9-x7-8U5" secondAttribute="trailing" constant="10" id="qgM-tk-hdw"/>
+                            <constraint firstItem="rWI-Wa-4Re" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="uey-NT-c8c"/>
+                            <constraint firstItem="eTd-qK-ZFf" firstAttribute="top" secondItem="Dhu-o9-DTD" secondAttribute="top" id="vIv-RP-SjE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eTd-qK-ZFf" secondAttribute="trailing" id="y4y-JM-Y7d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="biographyDetail" destination="xQQ-8i-Yjb" id="tfL-GJ-OMc"/>
+                        <outlet property="biographyHeader" destination="Yxp-oq-poA" id="wzm-eO-5g5"/>
+                        <outlet property="employerDetail" destination="eTd-qK-ZFf" id="jh1-AD-UcX"/>
+                        <outlet property="employerHeader" destination="Dhu-o9-DTD" id="Zfs-gB-wmJ"/>
+                        <outlet property="profileImage" destination="rWI-Wa-4Re" id="kJf-f4-vQO"/>
+                        <outlet property="screenHeader" destination="U7w-HE-WLo" id="xbz-Io-Aub"/>
+                        <outlet property="titleDetail" destination="iit-iE-UbQ" id="1Bx-Yf-R7r"/>
+                        <outlet property="titleHeader" destination="bO9-x7-8U5" id="xn7-ZK-iVj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="VYE-IF-mKN">
+                    <connections>
+                        <action selector="didTapOnImage:" destination="vXZ-lx-hvc" id="JQI-3C-GDF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="profileImage" width="93" height="93"/>
+    </resources>
+</document>
