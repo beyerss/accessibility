@@ -15,19 +15,31 @@ extension UIFont {
     
     // This is the font that gets used for screen titles
     class func screenHeaderFont() -> UIFont {
-        var font = UIFont(name: "Optima", size: 30.0)
+        var font = UIFont(name: fontName(), size: 30.0)
         return font!
     }
     
     // This is the font that gets used for header labels
     class func headerLabelFont() -> UIFont {
-        var font = UIFont(name: "Optima", size: 17.0)
+        var font = UIFont(name: fontName(), size: 17.0)
         return font!
     }
     
     // This is the font that gets used for details labels
     class func detailLabelFont() -> UIFont {
-        var font = UIFont(name: "Optima", size: 13.0)
+        var font = UIFont(name: fontName(), size: 13.0)
         return font!
+    }
+    
+    // all of the fonts will be adjusted if bold is enabled so
+    // we will use this method to determine the font name
+    class func fontName() -> String {
+        var fontName = "Optima"
+        
+        if (UIAccessibilityIsBoldTextEnabled()) {
+            fontName = "Optima-Bold"
+        }
+        
+        return fontName
     }
 }
