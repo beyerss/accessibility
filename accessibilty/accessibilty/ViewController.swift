@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         setupHeaderLabels()
         setupDetailLabels()
         
-        view.accessibilityElements = [screenHeader, employerHeader, employerDetail, titleHeader, titleDetail, biographyHeader, biographyDetail, ageHeader, ageSlider, educationButton]
+        view.accessibilityElements = [screenHeader, profileImage, employerHeader, employerDetail, titleHeader, titleDetail, biographyHeader, biographyDetail, ageHeader, ageSlider, educationButton]
     }
     
     // This method sets up the font and color of the main header on the screen
