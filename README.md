@@ -14,3 +14,5 @@ boldText 			- app implemented with Bold Text only
 reducedTransparency - app implemented with Reduced Transparency only
 darkerColors		- app implemented with Darker Colors only
 reducedMotion	    - app implemented with Reduced Motion only
+
+voiceOver is a new branch that has the Voice Over feature implemented. It also has a few more UI elements and a second screen that contains a UITableView to help demonstrate the power of Voice Over in different situations.
