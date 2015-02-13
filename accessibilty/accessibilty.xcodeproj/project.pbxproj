@@ -19,6 +19,10 @@
 		C82BE6DC1A5B728C00AC0946 /* AccessibilityColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82BE6DA1A5B728C00AC0946 /* AccessibilityColor.swift */; };
 		C890BF631A8E30F5008B6027 /* AccessibilityAgeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C890BF621A8E30F5008B6027 /* AccessibilityAgeSlider.swift */; };
 		C890BF641A8E30F5008B6027 /* AccessibilityAgeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C890BF621A8E30F5008B6027 /* AccessibilityAgeSlider.swift */; };
+		C8B661EB1A8E892500A56339 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B661E91A8E892500A56339 /* EducationViewController.swift */; };
+		C8B661EC1A8E892500A56339 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B661E91A8E892500A56339 /* EducationViewController.swift */; };
+		C8B661F01A8E8CD900A56339 /* EducationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B661EF1A8E8CD900A56339 /* EducationTableViewCell.swift */; };
+		C8B661F11A8E8CD900A56339 /* EducationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B661EF1A8E8CD900A56339 /* EducationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,8 @@
 		C82BE6D71A5B707800AC0946 /* AccessibiltyFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibiltyFont.swift; sourceTree = "<group>"; };
 		C82BE6DA1A5B728C00AC0946 /* AccessibilityColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityColor.swift; sourceTree = "<group>"; };
 		C890BF621A8E30F5008B6027 /* AccessibilityAgeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityAgeSlider.swift; sourceTree = "<group>"; };
+		C8B661E91A8E892500A56339 /* EducationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
+		C8B661EF1A8E8CD900A56339 /* EducationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EducationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 				C82BE6D71A5B707800AC0946 /* AccessibiltyFont.swift */,
 				C82BE6DA1A5B728C00AC0946 /* AccessibilityColor.swift */,
 				C890BF621A8E30F5008B6027 /* AccessibilityAgeSlider.swift */,
+				C8B661E91A8E892500A56339 /* EducationViewController.swift */,
+				C8B661EF1A8E8CD900A56339 /* EducationTableViewCell.swift */,
 			);
 			path = accessibilty;
 			sourceTree = "<group>";
@@ -225,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C890BF631A8E30F5008B6027 /* AccessibilityAgeSlider.swift in Sources */,
+				C8B661F01A8E8CD900A56339 /* EducationTableViewCell.swift in Sources */,
+				C8B661EB1A8E892500A56339 /* EducationViewController.swift in Sources */,
 				C82BE6D81A5B707800AC0946 /* AccessibiltyFont.swift in Sources */,
 				C82BE6B91A5B519900AC0946 /* ViewController.swift in Sources */,
 				C82BE6DB1A5B728C00AC0946 /* AccessibilityColor.swift in Sources */,
@@ -236,9 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B661F11A8E8CD900A56339 /* EducationTableViewCell.swift in Sources */,
 				C82BE6CD1A5B519900AC0946 /* accessibiltyTests.swift in Sources */,
 				C82BE6D91A5B707800AC0946 /* AccessibiltyFont.swift in Sources */,
 				C82BE6DC1A5B728C00AC0946 /* AccessibilityColor.swift in Sources */,
+				C8B661EC1A8E892500A56339 /* EducationViewController.swift in Sources */,
 				C890BF641A8E30F5008B6027 /* AccessibilityAgeSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

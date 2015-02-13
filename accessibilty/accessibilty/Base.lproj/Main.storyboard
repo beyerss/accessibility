@@ -96,7 +96,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="viewEducationTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i74-Jo-ff4"/>
+                                    <segue destination="or9-Kq-7j8" kind="show" id="wXH-XF-OUb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -154,6 +154,112 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+        </scene>
+        <!--Education View Controller-->
+        <scene sceneID="ACF-QY-Qjl">
+            <objects>
+                <viewController id="or9-Kq-7j8" customClass="EducationViewController" customModule="accessibilty" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZ7-gq-hw3"/>
+                        <viewControllerLayoutGuide type="bottom" id="rTQ-5D-UO3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="39M-rI-ftd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rY6-Az-bbd">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell" rowHeight="54" id="8Cr-aN-jia" customClass="EducationTableViewCell" customModule="accessibilty" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Cr-aN-jia" id="jwr-jG-35c">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Educational Institution" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5y-BL-AGi">
+                                                    <rect key="frame" x="8" y="8" width="144" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degree Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ0-E7-hnp">
+                                                    <rect key="frame" x="8" y="33" width="59" height="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graduation Date: 6/15/14" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fB7-sz-Rxr">
+                                                    <rect key="frame" x="428" y="18" width="164" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JJ0-E7-hnp" firstAttribute="bottom" secondItem="jwr-jG-35c" secondAttribute="bottomMargin" id="7Vu-YK-pI5"/>
+                                                <constraint firstItem="f5y-BL-AGi" firstAttribute="top" secondItem="jwr-jG-35c" secondAttribute="topMargin" id="7ZO-Ml-oZD"/>
+                                                <constraint firstItem="JJ0-E7-hnp" firstAttribute="leading" secondItem="jwr-jG-35c" secondAttribute="leadingMargin" id="dP1-Qy-YTh"/>
+                                                <constraint firstItem="f5y-BL-AGi" firstAttribute="leading" secondItem="jwr-jG-35c" secondAttribute="leadingMargin" id="dhb-ZH-Vd9"/>
+                                                <constraint firstItem="fB7-sz-Rxr" firstAttribute="trailing" secondItem="jwr-jG-35c" secondAttribute="trailingMargin" id="kJ3-rx-ZvX"/>
+                                                <constraint firstAttribute="centerY" secondItem="fB7-sz-Rxr" secondAttribute="centerY" id="sDP-vz-fMb"/>
+                                                <constraint firstItem="JJ0-E7-hnp" firstAttribute="top" secondItem="f5y-BL-AGi" secondAttribute="bottom" constant="8" id="uY1-AR-fQa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="degreeTypeLabel" destination="JJ0-E7-hnp" id="dZO-6V-ib6"/>
+                                            <outlet property="educationInstitutionLabel" destination="f5y-BL-AGi" id="ATL-jy-lhT"/>
+                                            <outlet property="gradDateLabel" destination="fB7-sz-Rxr" id="q9D-wy-6gg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="or9-Kq-7j8" id="a5O-ID-ngD"/>
+                                    <outlet property="delegate" destination="or9-Kq-7j8" id="p1Q-YI-edu"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FO7-Of-sbH">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Abf-gI-Dby"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Education" id="wEi-Zu-F6N">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="5gQ-HD-CJb">
+                                            <connections>
+                                                <segue destination="J6v-ZG-zOp" kind="unwind" unwindAction="prepareForUnwind:" id="hsE-lO-mkb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rY6-Az-bbd" firstAttribute="top" secondItem="39M-rI-ftd" secondAttribute="top" id="6m3-vb-LAp"/>
+                            <constraint firstAttribute="trailing" secondItem="rY6-Az-bbd" secondAttribute="trailing" id="EjC-Ff-lIK"/>
+                            <constraint firstAttribute="trailing" secondItem="FO7-Of-sbH" secondAttribute="trailing" id="KCJ-ce-sWv"/>
+                            <constraint firstItem="FO7-Of-sbH" firstAttribute="leading" secondItem="39M-rI-ftd" secondAttribute="leading" id="Sum-8g-X5U"/>
+                            <constraint firstItem="FO7-Of-sbH" firstAttribute="top" secondItem="39M-rI-ftd" secondAttribute="top" constant="20" id="VrT-Id-TNL"/>
+                            <constraint firstItem="rY6-Az-bbd" firstAttribute="top" secondItem="FO7-Of-sbH" secondAttribute="bottom" id="Yfk-q1-Ybr"/>
+                            <constraint firstItem="rY6-Az-bbd" firstAttribute="leading" secondItem="39M-rI-ftd" secondAttribute="leading" id="axY-hZ-Cfh"/>
+                            <constraint firstItem="rTQ-5D-UO3" firstAttribute="top" secondItem="rY6-Az-bbd" secondAttribute="bottom" id="hpo-SI-ygy"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6m3-vb-LAp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="educationTableView" destination="rY6-Az-bbd" id="vSr-ie-wek"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zv1-kq-c6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="J6v-ZG-zOp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="993" y="181"/>
         </scene>
     </scenes>
     <resources>

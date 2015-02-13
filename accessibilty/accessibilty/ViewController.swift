@@ -77,7 +77,8 @@ class ViewController: UIViewController {
         biographyDetail.textColor = UIColor.lightPinkColor()
     }
     
-    @IBAction func viewEducationTapped(sender: AnyObject) {
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        
     }
 }
 
