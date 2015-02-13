@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleDetail: UILabel!
     @IBOutlet weak var biographyHeader: UILabel!
     @IBOutlet weak var biographyDetail: UILabel!
+    @IBOutlet weak var ageHeader: UILabel!
+    @IBOutlet weak var ageSlider: UISlider!
+    @IBOutlet weak var educationButton: UIButton!
     
     // constraints for the large image that is displayed when you tap the profile image
     var topLargeImageConstraint: NSLayoutConstraint?
@@ -37,6 +40,8 @@ class ViewController: UIViewController {
         setupScreenHeaderLabel()
         setupHeaderLabels()
         setupDetailLabels()
+        
+        view.accessibilityElements = [screenHeader, employerHeader, employerDetail, titleHeader, titleDetail, biographyHeader, biographyDetail, ageHeader, ageSlider, educationButton]
     }
     
     // This method sets up the font and color of the main header on the screen
@@ -55,6 +60,9 @@ class ViewController: UIViewController {
         
         biographyHeader.font = UIFont.headerLabelFont()
         biographyHeader.textColor = UIColor.lightBlackColor()
+        
+        ageHeader.font = UIFont.headerLabelFont()
+        ageHeader.textColor = UIColor.lightBlackColor()
     }
 
     // This method sets up the font and color of all of the details
@@ -69,6 +77,8 @@ class ViewController: UIViewController {
         biographyDetail.textColor = UIColor.lightPinkColor()
     }
     
+    @IBAction func viewEducationTapped(sender: AnyObject) {
+    }
 }
 
 // This is an extension to the View Controller that will handle all of the animation

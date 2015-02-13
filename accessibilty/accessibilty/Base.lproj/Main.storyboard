@@ -75,13 +75,36 @@
                                     <outletCollection property="gestureRecognizers" destination="VYE-IF-mKN" appends="YES" id="r0S-wh-Q7C"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NG-kh-9yn">
+                                <rect key="frame" x="16" y="334" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="43.799999999999997" minValue="18" maxValue="65" translatesAutoresizingMaskIntoConstraints="NO" id="1Ad-hv-qwI" customClass="AccessibilityAgeSlider" customModule="accessibilty" customModuleProvider="target">
+                                <rect key="frame" x="14" y="363" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8Ef-DT-zRx"/>
+                                </constraints>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bD-ra-5Zr">
+                                <rect key="frame" x="478" y="330" width="106" height="30"/>
+                                <state key="normal" title="View Education">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewEducationTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i74-Jo-ff4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rWI-Wa-4Re" firstAttribute="top" secondItem="d07-bk-qj1" secondAttribute="top" id="AaE-uc-tOR"/>
+                            <constraint firstItem="0NG-kh-9yn" firstAttribute="leading" secondItem="1Ad-hv-qwI" secondAttribute="leading" id="EDK-UT-VEj"/>
                             <constraint firstItem="eTd-qK-ZFf" firstAttribute="leading" secondItem="Dhu-o9-DTD" secondAttribute="trailing" constant="10" id="EZi-T9-unD"/>
                             <constraint firstItem="rWI-Wa-4Re" firstAttribute="bottom" secondItem="d07-bk-qj1" secondAttribute="bottom" id="G4d-1S-P2b"/>
                             <constraint firstItem="rWI-Wa-4Re" firstAttribute="top" secondItem="U7w-HE-WLo" secondAttribute="bottom" constant="27" id="J7Q-y8-FL0"/>
+                            <constraint firstItem="0NG-kh-9yn" firstAttribute="leading" secondItem="xQQ-8i-Yjb" secondAttribute="leading" id="J86-hW-Gqh"/>
                             <constraint firstItem="xQQ-8i-Yjb" firstAttribute="trailing" secondItem="iit-iE-UbQ" secondAttribute="trailing" id="Mvj-wd-j9A"/>
                             <constraint firstItem="Yxp-oq-poA" firstAttribute="top" secondItem="rWI-Wa-4Re" secondAttribute="bottom" constant="27" id="NXf-G6-TJJ"/>
                             <constraint firstItem="iit-iE-UbQ" firstAttribute="top" secondItem="eTd-qK-ZFf" secondAttribute="bottom" constant="14" id="PjL-W5-pVH"/>
@@ -93,19 +116,26 @@
                             <constraint firstItem="Yxp-oq-poA" firstAttribute="leading" secondItem="rWI-Wa-4Re" secondAttribute="leading" id="Yjg-ke-vDT"/>
                             <constraint firstItem="iit-iE-UbQ" firstAttribute="baseline" secondItem="bO9-x7-8U5" secondAttribute="baseline" id="c8f-q3-heL"/>
                             <constraint firstItem="Dhu-o9-DTD" firstAttribute="top" secondItem="rWI-Wa-4Re" secondAttribute="top" id="cQP-za-hIE"/>
+                            <constraint firstItem="4bD-ra-5Zr" firstAttribute="baseline" secondItem="0NG-kh-9yn" secondAttribute="baseline" id="cVU-v2-4K5"/>
+                            <constraint firstItem="1Ad-hv-qwI" firstAttribute="top" secondItem="0NG-kh-9yn" secondAttribute="bottom" constant="8" id="dJs-Ej-M32"/>
                             <constraint firstItem="xQQ-8i-Yjb" firstAttribute="leading" secondItem="Yxp-oq-poA" secondAttribute="leading" id="dxF-ht-iPr"/>
                             <constraint firstItem="Dhu-o9-DTD" firstAttribute="leading" secondItem="bO9-x7-8U5" secondAttribute="leading" id="eJc-pO-y7Z"/>
                             <constraint firstItem="rWI-Wa-4Re" firstAttribute="leading" secondItem="d07-bk-qj1" secondAttribute="leading" id="oPW-MZ-MFm"/>
                             <constraint firstItem="rWI-Wa-4Re" firstAttribute="trailing" secondItem="d07-bk-qj1" secondAttribute="trailing" id="pb7-gL-qrw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4bD-ra-5Zr" secondAttribute="trailing" id="qTP-4u-32m"/>
                             <constraint firstItem="iit-iE-UbQ" firstAttribute="leading" secondItem="bO9-x7-8U5" secondAttribute="trailing" constant="10" id="qgM-tk-hdw"/>
                             <constraint firstItem="rWI-Wa-4Re" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="uey-NT-c8c"/>
                             <constraint firstItem="eTd-qK-ZFf" firstAttribute="top" secondItem="Dhu-o9-DTD" secondAttribute="top" id="vIv-RP-SjE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="eTd-qK-ZFf" secondAttribute="trailing" id="y4y-JM-Y7d"/>
+                            <constraint firstItem="0NG-kh-9yn" firstAttribute="top" secondItem="xQQ-8i-Yjb" secondAttribute="bottom" constant="27" id="y7V-q1-24x"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ageHeader" destination="0NG-kh-9yn" id="qjv-Ag-iaO"/>
+                        <outlet property="ageSlider" destination="1Ad-hv-qwI" id="NF6-J9-2Mf"/>
                         <outlet property="biographyDetail" destination="xQQ-8i-Yjb" id="tfL-GJ-OMc"/>
                         <outlet property="biographyHeader" destination="Yxp-oq-poA" id="wzm-eO-5g5"/>
+                        <outlet property="educationButton" destination="4bD-ra-5Zr" id="k93-kU-7BQ"/>
                         <outlet property="employerDetail" destination="eTd-qK-ZFf" id="jh1-AD-UcX"/>
                         <outlet property="employerHeader" destination="Dhu-o9-DTD" id="Zfs-gB-wmJ"/>
                         <outlet property="profileImage" destination="rWI-Wa-4Re" id="kJf-f4-vQO"/>
